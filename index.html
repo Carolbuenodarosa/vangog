@@ -552,6 +552,136 @@
                 height: 80px;
             }
         }
+
+        /* --- SITE ACCESS SECTION --- */
+        .site-access-section {
+            padding: 100px 8%;
+            background-color: var(--white);
+        }
+
+        .site-access-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            background: linear-gradient(135deg, #1a252f 0%, #2c3e50 100%);
+            border-radius: 20px;
+            padding: 60px;
+            color: var(--white);
+            position: relative;
+            overflow: hidden;
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+        }
+
+        /* Detalhe decorativo no fundo */
+        .site-access-container::after {
+            content: '';
+            position: absolute;
+            top: -50px;
+            right: -50px;
+            width: 200px;
+            height: 200px;
+            background: var(--primary);
+            border-radius: 50%;
+            opacity: 0.1;
+        }
+
+        .site-access-content {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 50px;
+        }
+
+        .site-text {
+            flex: 1;
+        }
+
+        .site-text span {
+            color: var(--primary);
+            text-transform: uppercase;
+            letter-spacing: 3px;
+            font-size: 0.8rem;
+            font-weight: 600;
+        }
+
+        .site-text h2 {
+            font-size: 2.8rem;
+            margin: 15px 0 25px 0;
+            line-height: 1.2;
+        }
+
+        .site-text p {
+            font-size: 1.1rem;
+            color: #bdc3c7;
+            margin-bottom: 35px;
+            max-width: 500px;
+        }
+
+        .btn-site {
+            display: inline-block;
+            padding: 15px 35px;
+            background: var(--primary);
+            color: var(--dark);
+            text-decoration: none;
+            font-weight: 600;
+            border-radius: 4px;
+            transition: var(--transition);
+            text-transform: uppercase;
+            font-size: 0.85rem;
+            letter-spacing: 1px;
+        }
+
+        .btn-site:hover {
+            background: var(--accent);
+            transform: translateY(-3px);
+        }
+
+        .qr-code-wrapper {
+            text-align: center;
+            background: rgba(255, 255, 255, 0.05);
+            padding: 30px;
+            border-radius: 15px;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .qr-frame {
+            background: white;
+            padding: 15px;
+            border-radius: 10px;
+            margin-bottom: 15px;
+            width: 180px;
+            height: 180px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .qr-frame img {
+            width: 100%;
+            height: auto;
+        }
+
+        .qr-code-wrapper p {
+            font-size: 0.8rem;
+            color: var(--accent);
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        /* Responsividade */
+        @media (max-width: 968px) {
+            .site-access-content {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .site-text p {
+                margin: 0 auto 35px auto;
+            }
+
+            .site-access-container {
+                padding: 40px 20px;
+            }
+        }
     </style>
 </head>
 
@@ -626,6 +756,26 @@
                     que une o pós-impressionismo com a forte influência da xilogravura japonesa (japonismo). Os traços e
                     técnicas utilizados são delicados, focando em movimento e estrutura.
                 </p>
+            </div>
+        </div>
+    </section>
+    <!-- --- SEÇÃO QR CODE / SITE --- -->
+    <section class="site-access-section">
+        <div class="site-access-container">
+            <div class="site-access-content">
+                <div class="site-text">
+                    <span>Aponte a camera</span>
+                    <h2>Responsivo para celular ou notebook</h2>
+                    <p>Acesse o site pelo QRCODE pelo celular</p>
+                    <a href="#" class="btn-site">Visitar Website <i class="fas fa-external-link-alt"></i></a>
+                </div>
+                <div class="qr-code-wrapper">
+                    <div class="qr-frame">
+                        <!-- Substitua pelo link da imagem do seu QR Code -->
+                        <img src="Untitled (1).jpg" alt="QR Code para o site">
+                    </div>
+                    <p>Aponte a câmera do celular</p>
+                </div>
             </div>
         </div>
     </section>
