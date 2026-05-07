@@ -13,15 +13,10 @@
     <style>
         :root {
             --primary: #6187af;
-            /* Turquesa */
             --accent: #F2CB05;
-            /* Dourado */
             --dark: #2C3E50;
-            /* Navy Dark */
             --moss: #232659;
-            /* Verde Musgo */
             --light: #F8F9FA;
-            /* Off-White */
             --white: #ffffff;
             --transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
         }
@@ -51,7 +46,6 @@
             font-weight: 600;
         }
 
-        /* --- NAVBAR --- */
         #navbar {
             display: flex;
             justify-content: space-between;
@@ -119,7 +113,6 @@
             width: 100%;
         }
 
-        /* --- HERO SECTION --- */
         .hero {
             height: 100vh;
             background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
@@ -166,7 +159,6 @@
             transform: translateY(-3px);
         }
 
-        /* --- CONTENT SECTION --- */
         .content-section {
             padding: 120px 8%;
         }
@@ -228,7 +220,6 @@
             transform: scale(1.02);
         }
 
-        /* --- PALETTE SECTION --- */
         .gallery-section {
             background-color: var(--white);
             padding: 100px 8%;
@@ -267,10 +258,8 @@
             font-weight: 500;
         }
 
-        /* --- FOOTER PROFISSIONAL --- */
         .main-footer {
             background-color: #1a252f;
-            /* Um azul quase preto, mais rico que o cinza */
             color: #ecf0f1;
             padding: 80px 8% 30px;
             font-size: 0.9rem;
@@ -325,7 +314,6 @@
             padding-left: 5px;
         }
 
-        /* Redes Sociais */
         .social-links {
             display: flex;
             gap: 15px;
@@ -350,7 +338,6 @@
             transform: translateY(-3px);
         }
 
-        /* Formulário de Newsletter */
         .footer-form {
             display: flex;
             margin-top: 15px;
@@ -379,7 +366,6 @@
             background: var(--accent);
         }
 
-        /* Parte Inferior */
         .footer-bottom {
             margin-top: 60px;
             padding-top: 30px;
@@ -413,11 +399,9 @@
             }
         }
 
-        /* --- DIV DE DESTAQUE TEXTUAL --- */
         .info-highlight {
             padding: 60px 8%;
             background-color: #cc9a3c49;
-            /* Fundo suave para não brigar com o resto */
             display: flex;
             justify-content: center;
         }
@@ -442,7 +426,6 @@
             width: 6px;
             height: 100px;
             background: var(--primary);
-            /* A cor azul turquesa da obra */
             flex-shrink: 0;
             border-radius: 10px;
         }
@@ -460,7 +443,6 @@
             font-weight: 600;
         }
 
-        /* Responsividade para tablets e celulares */
         @media (max-width: 768px) {
             .highlight-content {
                 flex-direction: column;
@@ -477,7 +459,6 @@
             }
         }
 
-        /* Classe para o efeito de "esconder" o texto antes da animação */
         .reveal-text {
             overflow: hidden;
             display: inline-block;
@@ -487,16 +468,14 @@
         .reveal-word {
             display: inline-block;
             transform: translateY(110%);
-            /* Começa abaixo da linha visual */
             transition: transform 0.8s cubic-bezier(0.165, 0.84, 0.44, 1);
         }
 
-        /* Ajuste no Hero para o título não sumir se o JS demorar */
+
         .hero-content h1 {
             overflow: hidden;
         }
 
-        /* --- AJUSTES DE RESPONSIVIDADE GERAL --- */
 
         @media (max-width: 968px) {
             #navbar {
@@ -505,19 +484,17 @@
 
             #navbar ul {
                 display: none;
-                /* Esconde o menu simples para evitar quebra de layout */
             }
 
             .container {
                 grid-template-columns: 1fr;
-                /* Empilha as colunas */
                 gap: 40px;
                 text-align: center;
             }
 
             .image-block::before {
                 display: none;
-                /* Remove o detalhe da borda em telas pequenas para evitar overflow */
+                
             }
 
             .content-section {
@@ -528,7 +505,6 @@
         @media (max-width: 480px) {
             .hero-content h1 {
                 font-size: 2.8rem;
-                /* Ajuste fino para o título não quebrar o layout */
                 line-height: 1.2;
             }
 
@@ -540,7 +516,6 @@
             .btn {
                 padding: 15px 30px;
                 width: 100%;
-                /* Botão largo para facilitar o toque no celular */
             }
 
             .palette {
@@ -552,8 +527,6 @@
                 height: 80px;
             }
         }
-
-        /* --- SITE ACCESS SECTION --- */
         .site-access-section {
             padding: 100px 8%;
             background-color: var(--white);
@@ -667,7 +640,6 @@
             letter-spacing: 1px;
         }
 
-        /* Responsividade */
         @media (max-width: 968px) {
             .site-access-content {
                 flex-direction: column;
@@ -744,8 +716,7 @@
             </div>
         </section>
     </main>
-    <!-- NOVA SEÇÃO QR CODE PROFISSIONAL -->
-    <!-- SEÇÃO QR CODE ATUALIZADA E PROPORCIONAL -->
+    
     <section class="qr-refined-section">
         <div class="qr-refined-wrapper">
             <div class="qr-refined-content">
@@ -774,7 +745,6 @@
         .qr-refined-wrapper {
             max-width: 900px;
             width: 100%;
-            /* Gradiente que remete ao sol poente */
             background: linear-gradient(135deg, #ffe563 0%, #D98E04 100%);
             border-radius: 4px;
             padding: 50px;
@@ -815,7 +785,6 @@
 
         .qr-refined-text p {
             color: #594501;
-            /* Marrom suave para leitura sobre o amarelo */
             font-size: 1rem;
             line-height: 1.6;
             font-weight: 500;
@@ -843,7 +812,6 @@
             width: 130px;
             height: 130px;
             display: block;
-            /* Filtro leve para o QR Code não destoar tanto */
             filter: sepia(20%);
         }
 
@@ -876,15 +844,6 @@
     </section>
 
     <footer class="main-footer">
-        <div class="footer-container">
-            <div class="footer-column">
-                <h3>VAN GOGH</h3>
-                <p>Uma exploração digital dedicada à vida e obra de um dos maiores génios do pós-impressionismo. Onde a
-                    cor encontra a alma.</p>
-
-            </div>
-        </div>
-
         <div class="footer-bottom">
             <p>Desenvolvido com <span style="color: var(--primary);">❤</span> por Carolini.</p>
         </div>
@@ -893,18 +852,17 @@
     <script>
         window.addEventListener('DOMContentLoaded', () => {
 
-            // 1. Efeito de Scroll na Navbar
+
             window.addEventListener('scroll', () => {
                 const navbar = document.getElementById('navbar');
                 navbar.classList.toggle('scrolled', window.scrollY > 100);
             });
 
-            // 2. Função para preparar o texto para animação
             const prepareText = (selector) => {
                 const elements = document.querySelectorAll(selector);
                 elements.forEach(el => {
                     const text = el.innerText;
-                    el.innerHTML = ''; // Limpa o texto original
+                    el.innerHTML = ''; 
 
                     text.split(' ').forEach(word => {
                         const spanOuter = document.createElement('span');
@@ -913,43 +871,40 @@
                         spanOuter.classList.add('reveal-text');
                         spanInner.classList.add('reveal-word');
 
-                        spanInner.innerText = word + '\u00A0'; // Adiciona espaço
+                        spanInner.innerText = word + '\u00A0';
                         spanOuter.appendChild(spanInner);
                         el.appendChild(spanOuter);
                     });
                 });
             };
 
-            // Aplicar preparação nos títulos e parágrafos principais
             prepareText('.hero-content h1, .text-block h2, .gallery-section h2');
 
-            // 3. Intersection Observer Otimizado
             const observer = new IntersectionObserver((entries) => {
                 entries.forEach(entry => {
                     if (entry.isIntersecting) {
-                        // Anima as palavras dentro do elemento
+
                         const words = entry.target.querySelectorAll('.reveal-word');
                         words.forEach((word, index) => {
                             setTimeout(() => {
                                 word.style.transform = 'translateY(0)';
-                            }, index * 60); // Delay de 60ms entre palavras
+                            }, index * 60); 
                         });
 
-                        // Se for imagem ou card de cor (mantém seu efeito original)
+        
                         if (entry.target.classList.contains('image-block') ||
                             entry.target.classList.contains('color-card')) {
                             entry.target.style.opacity = '1';
                             entry.target.style.transform = 'translateY(0)';
                         }
 
-                        observer.unobserve(entry.target); // Para de observar após animar
+                        observer.unobserve(entry.target); 
                     }
                 });
             }, { threshold: 0.1 });
 
-            // Seleciona tudo o que deve ser observado
+         
             document.querySelectorAll('.hero-content h1, .text-block h2, .gallery-section h2, .image-block, .color-card').forEach(el => {
-                // Inicializa opacidade para blocos que não são texto fatiado
                 if (el.classList.contains('image-block') || el.classList.contains('color-card')) {
                     el.style.opacity = '0';
                     el.style.transform = 'translateY(40px)';
